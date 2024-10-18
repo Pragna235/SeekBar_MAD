@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textViewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Rating:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+    <SeekBar
+        android:id="@+id/seekBarFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:layout_below="@id/textViewFood"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/textViewService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Rating:"
+        android:textSize="18sp"
+        android:layout_below="@id/seekBarFood"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:layout_below="@id/textViewService"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/textViewAmbiance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambiance Rating:"
+        android:textSize="18sp"
+        android:layout_below="@id/seekBarService"
+        android:layout_marginTop="16dp"/>
+    <SeekBar
+        android:id="@+id/seekBarAmbiance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:layout_below="@id/textViewAmbiance"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Ratings"
+        android:layout_below="@id/seekBarAmbiance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp"/>
+</RelativeLayout>
